@@ -129,6 +129,11 @@ nav a:not(:last-child):after {
 
 /* Mailchimp styles */
 
+#mc_embed_signup_scroll {
+    text-align: center;
+    margin-top: 2em;
+}
+
 #mc_embed_signup_scroll > div {
     display: inline;
 }
