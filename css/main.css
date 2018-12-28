@@ -90,6 +90,11 @@ input[type="submit"] {
     padding: 0.5em 1em;
 }
 
+header {
+    display: flex;
+    align-items: center;
+}
+
 footer {
     margin-top: 2em;
     color: #888;
@@ -115,9 +120,19 @@ nav a:not(:last-child):after {
     margin: 2em auto;
 }
 
+#header-text {
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+#header-photo {
+    flex-basis: 35%;
+    padding-left: 2em;
+    filter: grayscale(100);
+}
+
 #header-photo img {
     max-width: 100%;
-    margin: 1em auto;
 }
 
 .bounded {
@@ -150,8 +165,14 @@ nav a:not(:last-child):after {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 630px) {
+    header {
+        display: block;
+    }
 
+    #header-photo {
+        padding-left: 0;
+    }
 }
 
 @media print,
