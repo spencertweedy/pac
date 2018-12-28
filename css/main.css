@@ -74,7 +74,7 @@ h1 {
     font-size: calc(29px + (46 - 29) * ((100vw - 320px) / (1600 - 320)));
 }
 
-input[type="text"] {
+input[type="email"] {
     padding: 0.5em;
     max-width: 100%;
     margin-bottom: 1em;
@@ -94,6 +94,10 @@ footer {
     margin-top: 2em;
     color: #888;
     font-size: 0.7em;
+}
+
+footer p {
+    margin: 0.5em 0;
 }
 
 footer a {
@@ -120,6 +124,13 @@ nav a:not(:last-child):after {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+/* Mailchimp styles */
+
+#mc_embed_signup_scroll > div {
+    display: inline;
 }
 
 
